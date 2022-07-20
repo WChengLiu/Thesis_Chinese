@@ -1,7 +1,7 @@
 % !TeX root = ../main.tex
 \chapter{雷射電漿電子加速器概述}
 
-test github
+
 
 \section{電漿與電漿波}
 
@@ -200,3 +200,10 @@ IC 模擬中的粒子推動通常使用跳躍式方法，其中粒子位置和�
 \section{PIC模擬設定}
 我們使用VORPAL中二維模擬研究了使用密度剖面注入方法的 LWFA 的性能。 雷射脈衝寬度的半峰全寬 (FWHM) 為 33 fs，雷射波長為 810 nm，雷射強度參數 \(a_0 = 3.2 ~ 6.3\)。 電漿密度 \(n_e\) 在 \(10^{18}~10^{19} cm^{-3}\) 範圍內變化，用於研究單能電子束。 相對論光導的雷射功率 P 與臨界功率 \(P_c\) 之比約為 1.4 ~ 4.2（對應於 \(n_e = 10^{18}~10^{19} cm^{-3}\)。 因此雷射脈衝可以在沒有外部引導的情況下通過 3.5 mm 的氣體射流傳播。 這
 模擬框中的網格點數為 \(N_x, N_y) = (4096, 512)\)，網格大小 \(\Delta x =\lambda/32 , \Delta y = 4 \Delta x\)，分別在 x 和 y 方向。 時間步長由 Courant 條件的 0.99 倍決定。
+\begin{figure}
+  \centering
+  \includegraphics[scale = 0.5]{figures/density profile.png}
+  \caption{模擬設定中電漿密度分佈示意圖。}
+  %{Displacement of electrons by a small distance \(\Delta x\) generates a surface charge of \(\sigma\), and the restoring force lead to oscillations at a specific frequency that depends on the plasma density.}
+  \label{fig:plasma_density_profile}
+\end{figure}
